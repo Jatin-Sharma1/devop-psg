@@ -2,80 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shoolini University No.1 Private Univerity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jatin Sharma | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
     }
-    header {
-      background-color: #004d99;
+    .hero {
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
       color: white;
-      padding: 20px;
+      padding: 120px 0;
       text-align: center;
     }
-    img {
-      display: block;
-      margin: 20px auto;
-      max-width: 90%;
-      height: auto;
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
     }
-    section {
-      padding: 20px;
-      background-color: white;
-      margin: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #004d99;
-      color: white;
+      background: #111;
+      color: #aaa;
+      padding: 30px 0;
       text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    }
+    footer a {
+      color: #aaa;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Shoolini University. No.1 Private University.</h1>
-    <p>Dream Manifest Journey.</p>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Jatin Sharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <img src="https://shooliniuniversity.com/images/logo.png" alt="Shoolini University Logo">
-
-  <section>
-    <h2>About Shoolini University</h2>
-    <p>Shoolini University is a leading private university located in the beautiful hills of Solan, Himachal Pradesh, India. Known for its research-driven approach and innovation-focused education, Shoolini ranks among the top universities in India and Asia.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hi, I'm Jatin Sharma</h1>
+      <p>Aspiring Developer • Data Analyst • Tech Enthusiast</p>
+      <a href="#projects" class="btn btn-light btn-lg mt-4">View My Work</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Courses Offered</h2>
-    <ul>
-      <li>Engineering & Technology</li>
-      <li>Biotechnology & Biosciences</li>
-      <li>Management Sciences</li>
-      <li>Pharmaceutical Sciences</li>
-      <li>Law, Liberal Arts, and more...</li>
-    </ul>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x400" alt="Profile" class="img-fluid rounded-4 shadow">
+        </div>
+        <div class="col-md-6">
+          <p>
+            I'm a passionate learner and tech enthusiast with interests in 
+            <b>software development, data analysis, and full-stack projects</b>.  
+            I enjoy building practical projects like management systems and data-driven applications.  
+            My goal is to combine creativity with technology to deliver impactful solutions.
+          </p>
+          <p>
+            Apart from coding, I’m always exploring new tools, optimizing workflows, 
+            and preparing myself to excel in the tech industry.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: info@shooliniuniversity.com</p>
-    <p>Phone: +91 9625233301</p>
-    <p>Website: <a href="https://shooliniuniversity.com" target="_blank">shooliniuniversity.com</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fas fa-code fa-3x text-primary mb-3"></i>
+          <h5>Programming</h5>
+          <p>Java, PHP, Python</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fas fa-database fa-3x text-success mb-3"></i>
+          <h5>Databases</h5>
+          <p>MySQL, SQL, Data Analysis</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fas fa-laptop-code fa-3x text-danger mb-3"></i>
+          <h5>Web Development</h5>
+          <p>HTML, CSS, Bootstrap, React</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fas fa-chart-line fa-3x text-warning mb-3"></i>
+          <h5>Analytics</h5>
+          <p>Data Visualization, Excel</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project">
+            <div class="card-body">
+              <h5 class="card-title">Leave Management System</h5>
+              <p class="card-text">A PHP-MySQL project to manage employee leave requests with approvals and dashboards.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project">
+            <div class="card-body">
+              <h5 class="card-title">Flight Delay Analysis</h5>
+              <p class="card-text">A data analysis project using Python to study patterns in delayed flights and trends.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project">
+            <div class="card-body">
+              <h5 class="card-title">Library Management</h5>
+              <p class="card-text">A Java + React based library system with OOP concepts and JSON integration.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="shadow p-4 rounded bg-white">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shoolini University. All Rights Reserved.</p>
+    <p>© 2025 Jatin Sharma. All Rights Reserved.</p>
+    <div>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
